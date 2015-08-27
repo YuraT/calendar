@@ -8,7 +8,21 @@
     </head>
     
     <body>
-        <h1>Calendar</h1>
+        <h1>Охота и Рыбалка</h1>
+        
+    	<div class="content">
+            <div class="divNav">
+                <ul class="navigation">
+	                <li><a href="January.php">Январь</a></li>
+	                <li><a href="February.php">Февраль</a></li>
+	                <li><a href="March.html">Март</a></li>
+	                <li><a href="April.html">Апрель</a></li>
+	                <li><a href="May.html">Май</a></li>
+	                <li><a href="June.html">Июнь</a></li>
+	                <li><a href="July.html">Июль</a></li>
+                </ul>
+            </div>
+		</div>
         
         <?php
             $servername = getenv("IP");

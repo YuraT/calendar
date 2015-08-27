@@ -1,3 +1,62 @@
-body {
-    background-color: azure;
+html, body {width:  97%; 
+	background-color: azure;
+}
+
+ul.navigation { list-style-type: none;
+	padding-left: 0;
+	margin-left: 0; 
+	border: dashed thin black;
+	width: 120px;
+	border-left: solid thick black; 
+	margin-top: 0;
+	margin-right: 0;
+	}
+	
+ul.navigation a { display: block;
+	width: 120px;
+	height: 1.5em;
+	background: gold;
+	color: blue;
+    margin-bottom: 2px;
+		}
+		
+ul.navigation a:hover { background: black;
+			color: gold;
+			text-decoration: none;
+			transition: color, background .5s
+			}
+			
+h1 { 
+    text-align: center;
+	margin: 5mm;
+	font-family: 'Lobster', cursive;
+    }
+
+table.mainInfo { 
+    border-collapse: collapse;
+                margin: auto;
+                margin-left: 25% auto;
+                border: 0;
+}
+
+th {border: 0;
+}
+
+div.section { 
+			margin-left: 0;
+			margin-right: 0;
+			float: right;
+			width: 100%;
+			background-color: #a999BF;
+			border: 2px solid black;
+			margin-bottom: 100px; 
+}
+
+div.content { 
+    margin-left: 200px;
+}
+
+div.divNav	{ float: left;
+			width: 120px;
+			margin-left: -200px;
 }
