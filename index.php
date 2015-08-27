@@ -43,7 +43,7 @@
             $db->query("SET NAMES UTF8");
     
             
-            $res = $db->query('SELECT * FROM Months Where month="January"');
+            /*$res = $db->query('SELECT * FROM Months Where month="January"');
             
            echo '<div class="section">';
            
@@ -51,7 +51,7 @@
             while ($row = $res->fetch_assoc()) {
                 echo $row["Title"] . "<br />" . $row["info"];
             }
-            echo "</div>";
+            echo "</div>"; */
         ?>
     </body>
 </html>
