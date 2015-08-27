@@ -1,5 +1,6 @@
 <html>
     <head>
+        <meta charset="utf-8" />
         <title>My PHP</title>
     </head>
     
@@ -13,7 +14,7 @@
             $database = "c9";
             $dbport = 3306;
             
-            $db = new mysqli ($servername, $username, $password, $databse, $dbport);
+            $db = new mysqli ($servername, $username, $password, $database, $dbport);
             
             if ($db->connect_error) {
                 die("Connection failed: " . $db->connect_error);
@@ -22,12 +23,15 @@
                 echo "Connection OK (".$db->host_info.")";
             }
             
-            $query = "Select * Info";
+            $db->query("SET NAMES UTF8");
+    
             
-            $result = mysqli_query($db, $query);
+            $res = $db->query('SELECT * FROM Months Where month="January"');
             
-            while ($row = mysqli_fetch_assoc($result)) {
-                echo "The ID is: " . $row['id'];
+           
+            $res->data_seek(0);
+            while ($row = $res->fetch_assoc()) {
+                echo $row["Title"] . "<br />" . $row["info"];
             }
         ?>
     </body>
